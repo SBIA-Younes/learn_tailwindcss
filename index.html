@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+  <!-- ? Default Colors -->
+  <!-- text colors -->
+  
+  <div class="text-red-500">Hello World</div>
+  <div class="text-yellow-400">Hi mom</div>
+  <div class="text-blue-900">Hello World!</div>
+
+
+<!--  bg Colors -->
+<div class="bg-black text-white">Hellow World!</div>
+<div class="bg-yellow-500 text-black">Hi Mom</div>
+
+<!-- Underline -->
+<div class="underline decoration-red-500">Hellow World!</div>
+
+
+<!-- border Colors -->
+<input type="text" class="border border-red-500">
+
+<!-- Divide Colors -->
+<div class="divide-y divide-red-500">
+  <div>item 1</div>
+  <div>item 2</div>
+  <div>item 3</div>
+  <div>item 4</div>
+  <div>item 5</div>
+</div>
+<div class="divide-x divide-blue-900 flex">
+  <div>item 1</div>
+  <div>item 2</div>
+  <div>item 3</div>
+  <div>item 4</div>
+  <div>item 5</div>
+</div>
+
+<!-- Outline Colors -->
+<button class="outline outline-green-500">SBIA-Younes</button>
+
+<!-- Box Shadow Colors || Opacity defaults to 100 -->
+<div class="shadow shadow-orange-400/25">SBIA-Younes</div>
+
+
+<!-- Accent Colors -->
+<input type="checkbox" checked class="accent-red-600">
+<input type="radio" checked class="accent-cyan-600">
+
+
+<!-- Arbitrary Colors -->
+<div class="text-[#E56510]">SBIA</div>
+<div class="bg-[#E56000]">SBIA</div>
+
+<!-- Customize -->
+<div class="bg-zzz text-primary">Sbia</div>
+<script>
+  tailwind.config = {
+    theme: {
+      extend : {
+        colors: {
+          "primary": "#E56510",
+          "zzz": "#031426"
+        }
+      }
+    }
+  }
+</script>
+
+</body>
+</html>
