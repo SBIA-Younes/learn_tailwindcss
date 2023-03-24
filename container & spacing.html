@@ -20,13 +20,48 @@ container  None   width: 100%;
  -->
 <div class="bg-cyan-500 text-white container">SBIA Younes</div>
 
+<!--  Center Container && Add Padding Config -->
+
+<!-- Margin -->
+
+<div class="mx-z"></div>
+
+<!-- Padding -->
+
+<div class="px-z"></div>
+
+
+<!-- Space Between X -->
+<div class="flex space-x-z">
+  <div class="">item 1</div>
+  <div class="">item 2</div>
+  <div class="">item 3</div>
+  <div class="">item 4</div>
+  <div class="">item 5</div>
+</div>
+
+<!-- Space Between Y -->
+<div class="flex-colu space-y-z">
+  <div class="">item 1</div>
+  <div class="">item 2</div>
+  <div class="">item 3</div>
+  <div class="">item 4</div>
+  <div class="">item 5</div>
+</div>
+
+<!-- Customize -->
+
 <script>
   tailwind.config = {
     theme: {
+      container : {
+        center:true,
+        padding:"2rem",
+      },
       extend: {
-        container : {
-          center:true,
-          padding:"2rem",
+        spacing: {
+          'z': '2rem',
+
         }
       }
     }
